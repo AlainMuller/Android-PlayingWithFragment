@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DynamicFragment/DynamicFragment.iml" filepath="$PROJECT_DIR$/DynamicFragment/DynamicFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FixedFragment/FixedFragment.iml" filepath="$PROJECT_DIR$/FixedFragment/FixedFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListFragment/ListFragment.iml" filepath="$PROJECT_DIR$/ListFragment/ListFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayingWithFragments.iml" filepath="$PROJECT_DIR$/PlayingWithFragments.iml" />
+    </modules>
+  </component>
+</project>
+

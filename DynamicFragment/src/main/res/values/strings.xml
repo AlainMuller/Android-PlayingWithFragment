@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dynamic Fragments</string>
+    <string name="title_fragment1">= Fragment 1 =</string>
+    <string name="title_fragment2">= Fragment 2 =</string>
+    <string name="btn_frag2_goto1_text">Go to Fragment 1</string>
+    <string name="btn_frag1_goto2_text">Go to Fragment 2</string>
+
+</resources>

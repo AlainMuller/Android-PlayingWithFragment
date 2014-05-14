@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">List Fragments</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_empty">Aucun élément dans la liste</string>
+
+    <string-array name="list_examples">
+        <item>Belgique</item>
+        <item>France</item>
+        <item>Italie</item>
+        <item>Espagne</item>
+        <item>Portugal</item>
+        <item>Suisse</item>
+    </string-array>
+
+</resources>
