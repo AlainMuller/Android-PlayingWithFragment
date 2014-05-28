@@ -7,7 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements SecondFragment.OnSecondFragmentListener {
 
     public static final String LOG_TAG = "MainActivity";
 
@@ -15,12 +15,20 @@ public class MainActivity extends ActionBarActivity {
     public static final String TAG_SECOND = "second";
 
     private static final String STATE_KEY = "state";
+    private static final String NAME_KEY = "mName";
 
-    FragmentManager mManager;
-    FirstFragment mFirstFragment;
-    SecondFragment mSecondFragment;
+    private FragmentManager mManager;
+    private FirstFragment mFirstFragment;
+    private SecondFragment mSecondFragment;
 
-    boolean isFirstDisplayed = false;
+    private boolean isFirstDisplayed = false;
+
+    // Conservation du nom entré dans le Second Fragment
+    private String mName;
+
+    public String getName() {
+        return mName;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +55,9 @@ public class MainActivity extends ActionBarActivity {
             isFirstDisplayed = true;
         } else {
             Log.d(LOG_TAG, "¤ Chgt Orientation");
-            // Cas d'un changement d'orientation, on restaure l'état de l'activity
+            // Cas d'un changement d'orientation, on restaure l'état de l'activity (nom + frag affiché)
             isFirstDisplayed = savedInstanceState.getBoolean(STATE_KEY);
+            mName = savedInstanceState.getString(NAME_KEY);
 
             Log.d(LOG_TAG, "¤ Fragment à afficher : " + (isFirstDisplayed ? "FIRST" : "SECOND"));
 
@@ -64,6 +73,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onSaveInstanceState(Bundle outState) {
         // Sauvegarde de l'état de l'activity (fragment affiché) lors du changement d'orientation
         outState.putBoolean(STATE_KEY, isFirstDisplayed);
+        outState.putString(NAME_KEY, mName);
         super.onSaveInstanceState(outState);
     }
 
@@ -85,5 +95,10 @@ public class MainActivity extends ActionBarActivity {
 
         // Changement d'état
         isFirstDisplayed = !isFirstDisplayed;
+    }
+
+    @Override
+    public void onPauseBackup(String name) {
+        mName = name;
     }
 }
