@@ -36,7 +36,7 @@ public class DynamicActivity extends FragmentActivity {
         }
 
         if (mFragment != null) {
-            if (mFragment.equals(mDynamic1Fragment.getClass().getSimpleName())) {
+            if (mFragment.equals(Dynamic1Fragment.class.getSimpleName())) {
                 showFragment(mDynamic1Fragment);
             } else if (mFragment.equals(Dynamic2Fragment.class.getSimpleName())) {
                 showFragment(mDynamic2Fragment);
