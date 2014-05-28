@@ -1,1 +1,1 @@
-include ':FixedFragment', ':DynamicFragment', ':ListFragment';
+include ':FixedFragment', ':DynamicFragment', ':ListFragment', ':OrientationFragments';

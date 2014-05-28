@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/DynamicFragment" />
             <option value="$PROJECT_DIR$/FixedFragment" />
             <option value="$PROJECT_DIR$/ListFragment" />
+            <option value="$PROJECT_DIR$/OrientationFragments" />
           </set>
         </option>
       </GradleProjectSettings>

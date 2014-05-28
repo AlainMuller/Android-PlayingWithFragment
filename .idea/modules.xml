@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/DynamicFragment/DynamicFragment.iml" filepath="$PROJECT_DIR$/DynamicFragment/DynamicFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/FixedFragment/FixedFragment.iml" filepath="$PROJECT_DIR$/FixedFragment/FixedFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListFragment/ListFragment.iml" filepath="$PROJECT_DIR$/ListFragment/ListFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrientationFragments/OrientationFragments.iml" filepath="$PROJECT_DIR$/OrientationFragments/OrientationFragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/PlayingWithFragments.iml" filepath="$PROJECT_DIR$/PlayingWithFragments.iml" />
     </modules>
   </component>
